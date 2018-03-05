@@ -27,7 +27,7 @@
             'Content-type' : 'application/json'
           },
 
-          body : JSON.stringify(srtData);
+          body : JSON.stringify(strData);
         })
         .then((resp) => resp.json())
         .then((data) => {
