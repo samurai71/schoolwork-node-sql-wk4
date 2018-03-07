@@ -16,6 +16,7 @@
         console.log(key, value);
 
         strData[key] = value;
+      }
 
         //run a fetch and do a post
         let url ="api/";
@@ -27,7 +28,7 @@
             'Content-type' : 'application/json'
           },
 
-          body : JSON.stringify(strData);
+          body : JSON.stringify(strData)
         })
         .then((resp) => resp.json())
         .then((data) => {
